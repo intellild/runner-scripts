@@ -6,7 +6,10 @@ const path = require("node:path");
 const { program } = require("commander");
 
 program
-  .option("-s, --source <source>", "runner archive")
+  .option(
+    "-s, --source <source>",
+    "runner archive, for example: actions-runner-osx-arm64-2.304.0.tar.gz"
+  )
   .option("-t, --token <token>")
   .option("-u, --url <url>")
   .option("-n, --count <count>", "number of runner", (value) => Number(value));
