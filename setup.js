@@ -14,7 +14,7 @@ program
 program.parse();
 
 const { source, token, url, count } = program.opts();
-console.log(program.opts());
+
 const args = `--unattended --url ${url} --token ${token}`;
 
 const prefix = os.hostname();
